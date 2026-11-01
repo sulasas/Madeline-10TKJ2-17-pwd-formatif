@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: #e7a7bf;
+  font-family: Arial, sans-serif;
+}
+
+/* ID: lebar 900 px dan di tengah halaman */
+#gallery {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* Descendant */
+#gallery h2 {
+  text-align: center;
+  color: #f4f2f2;
+}
+
+/* Class: Grid tiga kolom sama lebar dengan jarak 20 px */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Child: hanya .gallery-item yang langsung di bawah .gallery */
+.gallery > .gallery-item {
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #f46565;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Descendant */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+/* Descendant */
+.gallery-item h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}

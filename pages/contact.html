@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Kontak</title>
+
+  <style>
+    /* Tag: latar terang dan font dengan font cadangan */
+    body {
+      margin: 0;
+      background-color: #ffb5c8;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* ID: jarak section */
+    #contact {
+      padding: 40px 20px;
+    }
+
+    /* Class: kotak formulir di tengah halaman */
+    .contact-form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 24px;
+      border: 1px solid #ff67ae;
+      background-color: #ffffff;
+    }
+
+    /* Descendant */
+    .contact-form h2 {
+      text-align: center;
+    }
+
+    /* Class */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    /* Descendant */
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    /* Grouping + Descendant */
+    .form-group input,
+    .form-group textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ff7474;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    /* Grouping + Pseudo-class: berubah saat kotak diklik */
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #f764bc;
+      background-color: #eaf3fc;
+    }
+
+    /* Class: tombol kirim */
+    .btn-submit {
+      padding: 10px 20px;
+      background-color: #d572a7;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    /* Pseudo-class: warna berubah saat disorot */
+    .btn-submit:hover {
+      background-color: #f496cd;
+    }
+  </style>
+</head>
+<body>
+  <section id="contact">
+    <form class="contact-form">
+      <h2>Hubungi Saya</h2>
+
+      <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Tulis namamu">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Tulis emailmu">
+      </div>
+
+      <div class="form-group">
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesanmu"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Kirim Pesan</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar dan Tata Letak</title>
+
+  <style>
+    /* Universal: padding dan border dihitung ke dalam lebar */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Tag */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Class: Flexbox, menu di kiri dan isi di kanan */
+    .layout {
+      display: flex;
+    }
+
+    /* ID: lebar 25%, latar gelap, tulisan terang */
+    #sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: #ffb7de;
+      color: #f5f7fa;
+    }
+
+    /* Descendant: tautan tersusun ke bawah dengan jarak 12 px */
+    #sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Descendant: tulisan terang dan tanpa garis bawah */
+    #sidebar a {
+      color: #f5f7fa;
+      text-decoration: none;
+    }
+
+    /* Pseudo-class: warna berubah saat disorot */
+    #sidebar a:hover {
+      color: #ffb74d;
+    }
+
+    /* Class: lebar 75% dan padding 30 px */
+    .main-content {
+      width: 75%;
+      padding: 30px;
+    }
+
+    /* Descendant: warna judul */
+    .main-content h1 {
+      color: #fda9e3;
+    }
+
+    /* Descendant: jarak antar baris paragraf */
+    .main-content p {
+      line-height: 1.8;
+    }
+
+    /* Tag: footer abu-abu, rata tengah */
+    footer {
+      padding: 14px;
+      text-align: center;
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside id="sidebar">
+      <h3>Menu</h3>
+      <nav>
+        <a href="../index.html">Profil</a>
+        <a href="../pages/about.html">Proyek</a>
+        <a href="../pages/gallery.html">Keahlihan</a>
+        <a href="../pages/contact.html">Kontak</a>
+      </nav>
+    </aside>
+
+   <main class="main-content">
+  <h1>Profil Saya</h1>
+  <p>Halo, saya Madeline Xaviera, siswa kelas 10 TKJ 2. Saat ini saya sedang belajar membuat website menggunakan HTML dan CSS.</p>
+  <p>Halaman ini berisi gambaran singkat tentang diri saya, proyek yang telah saya buat, dan keterampilan yang sedang saya pelajari.</p>
+  <p>Silakan gunakan menu di sisi kiri untuk berpindah ke bagian portofolio yang ingin Anda lihat.</p>
+</main>
+  </div>
+
+  <footer>
+    <a href="../index.html">Kembali ke Beranda</a>
+  </footer>
+</body>
+</html>

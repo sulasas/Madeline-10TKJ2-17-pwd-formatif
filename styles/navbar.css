@@ -1,0 +1,58 @@
+/* Tag */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ID: latar gelap */
+#main-header {
+  background-color: #f7aaca;
+}
+
+/* Class: Flexbox, logo kiri dan menu kanan */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Class */
+.logo {
+  color: #ff7bae;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Class: menu berjajar dengan jarak 24 px */
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Child: hanya li yang langsung di bawah .nav-menu */
+.nav-menu > li {
+  list-style: none;
+}
+
+/* Descendant */
+.nav-menu a {
+  color: #f9fbff;
+  text-decoration: none;
+}
+
+/* Pseudo-class */
+.nav-menu a:hover {
+  color: #ff4d94;
+}
+
+main {
+  padding: 30px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}

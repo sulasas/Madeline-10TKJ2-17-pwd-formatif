@@ -1,0 +1,89 @@
+/* ===== Dasar halaman ===== */
+body {
+  margin: 0;
+  padding: 40px 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #f6f7fb;
+  color: #333333;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  color: #2d3a5a;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+.button-row {
+  margin-top: 14px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* ===== Menu: warna berubah halus (0,3 detik, ease) ===== */
+.menu {
+  display: flex;
+  gap: 22px;
+}
+
+/* transition ditulis di keadaan biasa, bukan di :hover */
+.menu a {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.is-hover {
+  color: #ffc6cc;
+}
+
+/* ===== Tombol: gaya dasar dipakai kedua tombol ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Tombol 1: membesar 5% saat hover (0,3 detik, ease-out) */
+.btn-grow {
+  background-color: #dde5f1;
+  color: #2d3a5a;
+  transition: transform 0.3s ease-out;
+}
+
+.btn-grow:hover,
+.btn-grow.is-hover {
+  transform: scale(1.05);
+}
+
+/* Tombol 2: latar menjadi lebih gelap saat hover (0,4 detik, linear) */
+.btn-darken {
+  background-color: #ffb9ef;
+  color: #ffffff;
+  transition: background-color 0.4s linear;
+}
+
+.btn-darken:hover,
+.btn-darken.is-hover {
+  background-color: #ffc0f1;
+}
+
+/* ===== Fokus keyboard (tombol Tab) ===== */
+a:focus {
+  outline: 3px solid #2d3a5a;
+  outline-offset: 3px;
+}

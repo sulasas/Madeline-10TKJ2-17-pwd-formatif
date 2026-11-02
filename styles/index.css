@@ -1,0 +1,61 @@
+/* ===== Dasar halaman ===== */
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #f6f7fb;
+  color: #f4a2a2;
+}
+
+/* ===== Header: rata tengah, latar gelap, tulisan terang ===== */
+header {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #ff9ce1;
+  color: #ffffff;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 32px;
+}
+
+/* ===== Isi halaman ===== */
+main {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Grouping + ID + Descendant: judul kedua bagian sama persis */
+#components h2,
+#pages h2 {
+  margin: 0 0 12px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 22px;
+  color: #243a5e;
+}
+
+#pages {
+  margin-top: 24px;
+}
+
+/* Descendant: warna tautan berbeda dari warna biasa (biru/ungu bawaan) */
+main a {
+  color: #c77728;
+  font-weight: 600;
+}
+
+/* ===== Footer: tulisan kecil, rata tengah, latar berwarna ===== */
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #dfe5f1;
+}
+
+footer p {
+  margin: 0;
+}
